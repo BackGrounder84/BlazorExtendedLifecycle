@@ -18,7 +18,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build --no-restore --output ./path/to/artifact/
+      run: dotnet build --no-restore --output ./out
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Upload a Build Artifact
@@ -26,4 +26,4 @@ jobs:
       with:
         # Artifact name
         name: BlazorExtendedLifecycle
-        path: path/to/artifact/
+        path: out/
