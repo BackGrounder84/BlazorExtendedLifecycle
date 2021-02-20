@@ -1,4 +1,4 @@
-name: .NET
+name: deployment
 
 on:
   workflow_dispatch:
